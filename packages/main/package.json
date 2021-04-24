@@ -1,0 +1,15 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Main",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konov V. A. <vladislav.smirnov@phystech.edu>",
+  "license": "ISC",
+  "devDependencies": {
+    "forms": "1.0.0",
+    "workbench": "1.0.0"
+  }
+}
