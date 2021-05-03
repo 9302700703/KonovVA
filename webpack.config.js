@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './packages/main/src/index.js',
   output: {
     path: path.join(__dirname, 'build'),
@@ -24,13 +24,20 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react']
+            presets: ['@babel/preset-react'],
+            plugins: [ '@babel/plugin-proposal-class-properties' ]
           }
         }
       },
       {
         test: /(\.global)?\.less$/,
         use: [ 'style-loader', 'css-loader', 'less-loader' ]
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-url-loader'
+        }
       }
     ]
   },
