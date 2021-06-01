@@ -1,4 +1,7 @@
 import React from 'react'
 import './style.less'
 
-export default props => <div className='workspace'>{props.children}</div>
+const Workspace = props => <div className='workspace'>{props.children}</div>
+
+export default Workspace
+

@@ -3,9 +3,9 @@ import { isEqual } from 'lodash'
 import usePrevious from './usePrevious'
 
 export default (fn, arr) => {
-  const prevNextValues = arr.map(it => [ usePrevious(it), it ])
+  const prevNext = arr.map(it => [ usePrevious(it), it ])
   useEffect(() => {
-    if (prevNextValues.some(([ prev, next ]) => !isEqual(prev, next))) {
+    if (prevNext.some(([ prev, next ]) => !isEqual(prev, next))) {
       fn()
     }
   }, arr)

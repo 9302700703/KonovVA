@@ -9,8 +9,6 @@
   "author": "Konov V. A. <vladislav.smirnov@phystech.edu>",
   "license": "ISC",
   "dependencies": {
-    "components": "1.0.0",
-    "forms": "1.0.0",
-    "server": "1.0.0"
+    "components": "1.0.0"
   }
 }
