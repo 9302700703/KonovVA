@@ -4,6 +4,7 @@
   "description": "Admin Panel",
   "main": "index.js",
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "start": "node ./scripts/dev-server.js --env.dev",
     "build": "webpack --mode production --env prod"
   },
@@ -11,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/9302700703/KonovVA.git"
   },
-  "author": "KonovVA",
+  "author": "Konov V.A. <vladislav.smirnov@phystech.edu>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/9302700703/KonovVA/issues"
@@ -26,6 +27,7 @@
     "@babel/preset-react": "7.13.13",
     "babel-loader": "8.2.2",
     "html-webpack-plugin": "5.3.1",
+    "lerna": "4.0.0",
     "minimist": "1.2.5",
     "webpack": "5.35.1",
     "webpack-cli": "4.6.0",
