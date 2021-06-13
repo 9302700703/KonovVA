@@ -1,7 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+import TestComponent from 'components'
+
 render(
-  <div>Init</div>,
+  <TestComponent/>,
   document.getElementById('root')
 )
